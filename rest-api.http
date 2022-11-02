@@ -1,0 +1,29 @@
+GET http://127.0.0.1:8080/contatos/1
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8080/contatos
+Content-Type: application/json
+
+{
+  "nomecontato": "Teste",
+  "emailcontato": "teste@teste.com",
+  "telcontato": "(11) 99999-9999"
+}
+
+###
+
+PUT http://127.0.0.1:8080/contatosPut/1
+Content-Type: application/json
+
+{
+  "nomecontato": "TesteA",
+  "emailcontato": "teste@teste.com",
+  "telcontato": "(11) 99999-9999"
+}
+###
+
+DELETE http://127.0.0.1:8080/contatosDelete/1
+Accept: application/json
+
